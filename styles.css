@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sankofa+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Playwrite+MX:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sankofa+Display&display=swap');
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #1f2022;
+  
+}
+
+h1 {
+  margin: 30px;
+  font-family: "Sankofa Display", sans-serif;
+  text-shadow: 5px 0 #8ca6c7;
+  font-size: 8rem;
+  color: #504ae2;
+}
+
+p {
+  font-size: 2rem;
+  color: #bfc8c8;
+  font-family: "Sankofa Display", sans-serif;
+  font-weight: ;
+}
+
+img {
+  width: 80%;
+}
+.switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+.switch input {
+  display: none;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light-mode h1,
+body.light-mode p,
+body.light-mode footer {
+  color: #000000;
+}
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: "Playwrite AR", cursive;
+
+}
